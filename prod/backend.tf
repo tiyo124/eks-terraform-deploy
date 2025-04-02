@@ -1,7 +1,7 @@
 terraform {
   required_version = ">=0.12.0"
   backend "s3" {
-    key            = "production/terraform.state"
+    key            = "prod/terraform.state"
     bucket         = "tayoclass38dominion-terraform-backend"
     region         = "us-east-2"
     dynamodb_table = "terraform-state-locking"
